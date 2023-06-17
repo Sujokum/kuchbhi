@@ -18,7 +18,9 @@ mongoose.connect("mongodb+srv://sunailahmad7:test123@cluster0.xbgs8ww.mongodb.ne
 })
 
 
-
+app.get("/" , (req , res)=>{
+    res.status(200).send("sayyyasdjahsjkdhkjas")
+})
 app.post('/api/user' , async (req , res )=>{
     try {
         //username --- validate --- db save -- res --- frnt
