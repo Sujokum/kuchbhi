@@ -17,7 +17,9 @@ mongoose.connect("mongodb+srv://sunailahmad7:test123@cluster0.xbgs8ww.mongodb.ne
     console.log(`connection failed ${e}`)
 })
 
-
+app.get("/" , (req , res)=>{
+    res.send("hI JANU")
+})
 
 app.post('/api/user' , async (req , res )=>{
     try {
